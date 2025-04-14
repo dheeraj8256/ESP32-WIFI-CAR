@@ -1,0 +1,21 @@
+ Circuit Connections:
+ESP32 to L298N:
+ESP32 Pin	L298N Pin	Description
+GPIO 5	IN1	Motor A control 1
+GPIO 18	IN2	Motor A control 2
+GPIO 19	IN3	Motor B control 1
+GPIO 21	IN4	Motor B control 2
+VIN	VCC	Power to L298N (from ESP32 battery input or separate supply)
+GND	GND	Common ground
+Motors:
+Connect Motor A to OUT1 & OUT2 of L298N
+
+Connect Motor B to OUT3 & OUT4 of L298N
+
+Power:
+Connect a 7.4V battery to the L298N 12V input and GND
+
+Use the 5V output from L298N to power the ESP32 VIN if your motor driver has a voltage regulator (check your L298N board)
+
+⚠️ Ensure GND is common between ESP32 and L298N
+
